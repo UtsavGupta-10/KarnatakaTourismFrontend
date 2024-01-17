@@ -1,0 +1,58 @@
+.booking-detail{
+    background-image: url('../../../assets/images/Home3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 620px;
+}
+
+.container-1{
+   background-color: aliceblue;
+   text-align: center;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.temp{
+    display: flex;   flex-direction: column;   align-items: center;
+}
+
+img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    text-align: center;
+}
+@media screen and (min-width: 300px) and (max-width: 575px) {
+    /* Your styles for screens with a maximum width of 450px go here */
+    .container-1{
+        background-color: aliceblue;
+        text-align: center;
+        border-radius: 20px;
+        width: 350px;
+        height: auto;
+     }
+     img{
+        width: 150px;
+        height: 90px;
+        text-align: center;
+        margin-left: 32px;
+     }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px){
+    .container-1{
+        background-color: aliceblue;
+        text-align: center;
+        border-radius: 20px;
+        width: 550px;
+        height: auto;
+     }
+     img{
+        width: 180px;
+        height: 180px;
+        text-align: center;
+        margin-left: 32px;
+     }
+}

@@ -1,0 +1,68 @@
+/* Footer styles */
+
+/* Footer area */
+.footer-area {
+    background-color:white; /* Footer background color */
+    color:black; /* Text color */
+    padding: 60px 0; /* Adjust padding as needed */
+  }
+  
+  /* Single footer widget styles */
+  .single-footer-widget h6 {
+    font-size: 18px; /* Widget title font size */
+    margin-bottom: 20px;
+  }
+  
+  .single-footer-widget p {
+    font-size: 14px; /* Widget content font size */
+    line-height: 24px; /* Line height */
+  }
+  
+  .single-footer-widget .footer-text {
+    margin-top: 30px;
+  }
+  
+  /* Newsletter form styles */
+  .single-footer-widget form {
+    position: relative;
+  }
+  
+  .single-footer-widget input[type="email"] {
+    width: 100%; /* Input width */
+    padding: 10px; /* Input padding */
+    border: 1px solid black; /* Input border */
+    border-radius: 4px; /* Input border radius */
+    color:black; /* Input text color */
+    background-color: transparent; /* Input background color */
+    margin-bottom: 10px;
+  }
+  
+  .single-footer-widget input[type="email"]::placeholder {
+    font-style: italic;
+    color: black; /* Input placeholder color */
+  }
+  
+  .single-footer-widget .click-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    color: black; /* Button color */
+  }
+  
+  /* Social widget styles */
+  .social-widget {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Additional styles for social icons if added */
+  .social-widget a {
+    color: #fff; /* Social icon color */
+    margin-right: 10px; /* Margin between icons */
+    font-size: 20px; /* Icon size */
+  }
+  

@@ -1,0 +1,26 @@
+.container-fluid{
+    /* background-color: red; */
+    background-image: url("../../../assets/images/Home4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-pills li a.active{
+    /* background-color: rgb(255, 200, 0); */
+    background-color: rgb(255, 174, 0);
+}
+
+.nav-pills li a{
+    transition: transform 0.2s;
+    text-decoration: none !important;
+    color: black;
+}
+.nav-pills li a:hover{
+    transform: scale(1.05);
+}
+
+.temp{
+    width: 100%;
+    background-color: red;
+}

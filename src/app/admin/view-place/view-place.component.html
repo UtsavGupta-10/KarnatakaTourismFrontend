@@ -1,0 +1,20 @@
+<div class="container mt-4">
+
+    <!-- Header Section (optional) -->
+    <div class="header">
+        <h1 style="color: white;">Destinations</h1>
+    </div>
+
+    <!-- Place List Section -->
+    <div class="place-list-container">
+        <ng-container *ngIf="placeList.length > 0; else noPlaces">
+            
+        </ng-container>
+        <ng-template #noPlaces>
+            <div class="no-places-message">
+                <h1>No tourist places available</h1>
+                <!-- You can add additional information or a call-to-action here -->
+            </div>
+        </ng-template>
+    </div>
+</div>

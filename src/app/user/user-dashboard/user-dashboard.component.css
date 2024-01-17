@@ -1,0 +1,221 @@
+/* banner area */
+.banner-area {
+  /* Set the background image path */
+  background-image: url('../../../assets/images/header-bg.jpg');
+  border: 2px solid #ccc; /* Border style */
+border-radius: 8px; /* Rounded corners */
+padding: 20px; /* Padding inside the container */
+margin-top: 20px;
+margin-bottom: 20px;
+
+
+
+  /* Center and cover the background image */
+  background-position: center;
+  background-size: cover;
+ 
+  /* Additional styles for clarity and compatibility */
+  padding: 150px 0; /* Adjust as needed */
+  color: #fff; /* Text color on top of the image */
+}
+/* banner area end */
+
+/* Navbar background and text color */
+.navbar {
+  background-color: rgb(255, 255, 255); 
+  /* Change this to your desired background color */
+  color: rgb(0, 0, 0); /* Change this to your desired text color */
+}
+.main-user-dash{
+  background-color:rgba(30, 67, 147, 0.733);
+  background-image: url("../../../assets/images/Home3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+   
+}
+/* Navbar brand link styles */
+.navbar-brand {
+  color: aliceblue; /* Brand text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-brand:hover {
+  color: #fff; /* Change brand text color on hover */
+}
+
+/* Navbar toggler icon color */
+.navbar-toggler {
+  border-color: white; /* Toggle button color */
+}
+
+.navbar-toggler-icon {
+  color: white; /* Toggle icon color */
+}
+
+/* Navbar links styles */
+.navbar-nav li {
+  padding: 8px 15px; /* Adjust padding as needed */
+}
+
+.navbar-nav li a {
+  color: rgb(0, 0, 0); /* Navbar link text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-nav li a:hover {
+  color: blue; /* Change navbar link text color on hover */
+}
+.subscript {
+  vertical-align: sub;
+}
+/* Active link styles */
+.navbar-nav li.active a {
+  color: #fff; /* Change color of active link */
+}
+
+/* service section */
+/* Styles for banner area */
+
+.banner-content {
+  text-align: center;
+  
+ 
+}
+
+.banner-content h1 {
+  font-size: 48px; /* Adjust font size */
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: 2px solid #fff; /* Button border color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #fff; /* Button background color on hover */
+  color: #333; /* Button text color on hover */
+}
+
+/* Styles for portfolio area */
+.portfolio-area {
+  padding: 80px 0; /* Adjust padding as needed */
+}
+
+.menu-content h1 {
+  font-size: 36px; /* Title font size */
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-bottom: 40px;
+}
+
+.filters ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.filters ul li {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.filters ul li:hover {
+  color: #007bff; /* Hover color for filter items */
+}
+
+.filters ul li.active {
+  color: #007bff; /* Active filter color */
+}
+
+.filters-content {
+  position: relative;
+}
+
+.single-portfolio {
+  margin-bottom: 30px;
+}
+
+.single-portfolio img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.single-portfolio .item {
+  position: relative;
+}
+
+.single-portfolio .p-inner {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7); /* Background color for caption */
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.single-portfolio .p-inner h4,
+.single-portfolio .p-inner h5 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.single-portfolio .p-inner .cat {
+  font-size: 14px;
+  color: #aaa;
+}
+
+#dropdown {
+  color:black; /* Change the font color to red */
+  border-color:black; /* Change the border color to red */
+}
+
+/* Change the color of the options in the dropdown */
+#dropdown option {
+  color:black;
+}
+
+
+/* Form section */
+
+.container-form {
+border: 2px solid #ccc; /* Border style */
+border-radius: 8px; /* Rounded corners */
+padding: 20px; /* Padding inside the container */
+margin-top: 20px; /* Margin to separate from other content */
+margin-bottom: 20px;
+
+
+}
+
+
+
+.form-control,
+.form-select {
+width: 100%;
+margin-bottom: 15px; /* Adjust the bottom margin of form inputs and select */
+border-radius: 5px; /* Add border radius to form inputs and select */
+}
+
+.btn {
+width: 100%;
+font-size: 1.2rem; /* Adjust the font size of the button */
+padding: 10px; /* Adjust the padding of the button */
+border-radius: 5px; /* Add border radius to the button */
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

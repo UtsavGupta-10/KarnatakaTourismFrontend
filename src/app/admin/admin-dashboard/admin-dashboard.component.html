@@ -1,0 +1,62 @@
+<div class="container-fluid " >
+  <div class="row flex-nowrap gap-0 " >
+
+     <!-- aside bar -->
+    <div class="bg-white  col-auto col-md-4 col-lg-3 min-vh-100 d-flex flex-column
+     justify-content-between " style="opacity: 0.8;width: 17rem;">
+ 
+      <div class="bg-white p-2 " style="text-align: left;opacity: 0.8;">
+        <a  class="d-flex align-items-center mt-1 text-decoration-none black">
+          <span class="fs-4 d-none d-sm-inline" style="margin: auto;font-weight: 800;margin-left: 30px;color: black;letter-spacing: 1px;" >Menu</span>
+        </a>
+          <ul class="nav nav-pills flex-column mt-4" style="font-size: 10px;">
+                <li class="nav-item py-2 py-sm-0 nav-link" >
+                    <a class="nav-link  black"  routerLink="addplace" routerLinkActive="active">
+                      <i class="fs-5 fa-solid fa-plus"></i>
+                        <span class="fs-4 ms-3 d-md-inline d-none d-sm-inline " >Add Place</span>
+                    </a>
+                </li>
+                <li class="nav-item py-2 py-sm-0 nav-link" >
+                  <a  class="nav-link  black" routerLink="viewplace"  routerLinkActive="active">
+                    <i class="fs-5 fa-solid fa-location-dot"></i>
+                      <span class="fs-4 ms-3 d-md-inline d-none d-sm-inline ">Destinations</span>
+                  </a>
+              </li>
+                <li class="nav-item py-2 py-sm-0 nav-link" >
+                  <a  routerLink="viewuser" class="nav-link  black"  routerLinkActive="active">
+                    <i class="fs-5  fa-solid fa-users"></i> 
+                    <span class="fs-4 ms-3 d-none d-sm-inline">Users</span>
+                  </a>
+              </li>
+              <li class="nav-item py-2 py-sm-0v nav-link" >
+                <a  class="nav-link  black" routerLink="viewfeedback"  routerLinkActive="active">
+                  <i class="fs-5 fa-solid fa-comments"></i>
+                  <span class="fs-4 ms-3 d-none d-sm-inline">FeedBack</span>
+                </a>
+            </li>
+           
+            <li class="nav-item py-2 py-sm-0 nav-link" >
+              <a href="/" class="nav-link  black"  routerLinkActive="active">
+                <i class="fs-5 fa-solid fa-right-from-bracket"></i>
+                <span class="fs-4 ms-3 d-none d-sm-inline">Logout</span>
+              </a>
+          </li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- content -->  
+   
+    <div class="p-0 col auto  col-md-8 col-lg-9">
+     
+      <h1 class="bg-transparent p-3 w-100" style="color: white;">Admin Dashboard</h1>
+         <router-outlet >
+ 
+        </router-outlet>   
+           
+    </div>
+
+  </div>
+ </div>
+ 
+ 

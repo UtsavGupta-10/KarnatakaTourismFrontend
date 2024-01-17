@@ -1,0 +1,28 @@
+<div class="booking">
+    <app-user-navbar>
+                
+    </app-user-navbar>
+      <div class="d-flex flex-wrap gap-3 ">
+         
+        <div class="d-flex flex-row flex-wrap gap-4 justify-content-center mx-auto ">
+            
+            <div  *ngFor="let place of placeList" >
+                
+                    <div  class="card container d-md-flex justify-content-md-between   d-lg-flex justify-content-lg-between" 
+                        (click)="callUserBookingDetail(place.placeID)">
+
+                        <img src="../../../assets/images/{{place.image}}" 
+                        class="card-img-top mt-3 object-fit-contain " alt="Click On Image">
+                        <div class="card-body">
+                    
+                                    <div class=" d-flex flex-row justify-content-between"> 
+                                    <h5 class="card-title single-line">{{place.name}}</h5>
+                                    <p class=" text-danger">{{place.distance}} Km</p>
+                                    </div >
+                            <p class="card-text">{{place.description}} </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

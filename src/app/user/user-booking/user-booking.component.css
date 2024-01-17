@@ -1,0 +1,35 @@
+.container{
+    max-width: 16.25rem;
+    width: 100%;
+    height: 21.875rem;
+    transition: transform .2s;
+    border-radius: 1rem;
+    
+ }
+ .container{
+    transition: transform .2s;
+    height: 400px;
+ 
+ }
+ .container:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+   
+ }
+ .single-line {
+    height: auto;
+    /* Hide any content that overflows the div */
+    
+    overflow: hidden;
+  }
+ 
+ p{
+    font-size: 14px;
+ }
+ .booking{
+   background-image: url('../../../assets/images/Home3.jpg');
+   background-image: no-repeat;
+   background-size: cover;
+   height: 100vh;
+ }

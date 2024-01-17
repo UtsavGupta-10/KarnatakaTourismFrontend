@@ -1,0 +1,119 @@
+
+/* Form container styles */
+ 
+ 
+.fb-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: burlywood;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ 
+/* Heading styles */
+.fb-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+ 
+/* Form control styles */
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+ 
+/* Rating star styles */
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+ 
+.rating i {
+  font-size: 24px;
+  color: gold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+ 
+.rating i:hover {
+  color: orange;
+}
+ 
+/* Submit button styles */
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ 
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.navbar {
+  /* Change this to your desired background color */
+  color: rgb(0, 0, 0);
+  background-color: white; /* Change this to your desired text color */
+}
+ 
+/* Navbar brand link styles */
+.navbar-brand {
+  color: aliceblue; /* Brand text color */
+  text-decoration: none; /* Remove underline */
+}
+ 
+.navbar-brand:hover {
+  color: #fff; /* Change brand text color on hover */
+}
+ 
+/* Navbar toggler icon color */
+.navbar-toggler {
+  border-color: white; /* Toggle button color */
+}
+ 
+.navbar-toggler-icon {
+  color: white; /* Toggle icon color */
+}
+ 
+/* Navbar links styles */
+.navbar-nav li {
+  padding: 8px 15px; /* Adjust padding as needed */
+}
+ 
+.navbar-nav li a {
+  color: white; /* Navbar link text color */
+  text-decoration: none; /* Remove underline */
+}
+ 
+.navbar-nav li a:hover {
+  color: #fff; /* Change navbar link text color on hover */
+}
+ 
+/* Active link styles */
+.navbar-nav li.active a {
+  color: #fff; /* Change color of active link */
+}
+.main2{
+  background-image: url('../../../assets/images/Home3.jpg');
+  background-size: cover;
+  background-position: center;
+margin: 0%;
+height: 640px;
+}
+.subscript {
+  vertical-align: sub;
+}

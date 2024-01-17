@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+}
+
+.place-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.place-list-container h1 {
+    width: 100%; /* Ensure full width for the error message */
+    text-align: center; /* Center align the error message */
+}
+
+.app-view-place-card {
+    flex: 0 0 calc(33.33% - 2rem); /* Adjust the width as needed */
+    max-width: calc(33.33% - 2rem); /* Adjust the max-width as needed */
+    margin: 1rem; /* Add margin between cards */
+}
+
+
+
+

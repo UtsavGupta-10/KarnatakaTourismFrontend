@@ -1,0 +1,47 @@
+
+<div class="main2">
+  
+  <nav class="navbar navbar-expand-lg ">
+   <div class="container">
+         <a class="navbar-brand" href="/">
+          <h1 style=" color: rgb(0, 0, 0); font-style:oblique;font-size: 38px;"> Karnataka <span class="subscript" style="font-size: 30px;color: red;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Tourism</span></h1>
+        </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="text-white lnr lnr-menu"></span>
+         </button>
+   </div>
+ </nav>
+
+<div class='fb-form' style="margin-top: 60px;background-color: white;opacity: 0.9;width: 40vw;border-radius: 10px;">
+  <!-- style="background-color: white;opacity: 0.9;width: 40vw;padding: 0;border-radius: 10px;" -->
+  
+    <form action='#' class='form-group'  style="opacity: 0.7;">
+      <h2 style="color: black;"> Tell us what you think</h2>
+      <!-- <input class='form-control' placeholder='Email' type='text'> -->
+     
+
+      <div class="mb-2 form-floating">
+        <select class="form-select" id="dropdown" 
+        name="dropdown"  [(ngModel)]="selectedPlace" required>
+          
+        <option *ngFor="let item of placeList" [value]="item.name" style="color: black;"> {{item.name}}</option>
+        </select>
+        <label for="dropdown" style="color: black;">Select Place</label>
+      </div>
+      <textarea class='form-control' id='fb-comment' name='comment'
+      placeholder='Tell us what you think' [(ngModel)]="FeedbackData.comment"></textarea>
+
+      <div class="form-floating">
+        <input [(ngModel)]="FeedbackData.rating" class='form-control'
+               type="number" name="rating" required
+               min="0" max="10"/>
+        <label for="rating" style="color: black;">Enter Rating</label>
+      </div>
+      
+      <button class='form-control btn btn-primary' type='submit' (click)="OnSubmit()">
+        Submit
+      </button>
+    </form>
+  </div> 
+
+</div>

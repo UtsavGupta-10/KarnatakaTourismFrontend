@@ -1,0 +1,218 @@
+.container1{
+  transition: transform .2s;
+}
+.container1:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+ 
+}
+.container{
+  transform: scale(1.05);
+ 
+  cursor: pointer;
+ 
+}
+.subscript {
+  vertical-align: sub;
+}
+/* banner area end */
+/* Reset some default styles and add custom styles */
+
+
+/* Style for the banner area */
+.banner-area {
+  position: relative;
+  height: 100vh; /* You may adjust this height based on your design */
+  background: url('../../../assets/images/Home3.jpg') center/cover no-repeat; /* Replace 'your-image-url.jpg' with your actual image URL */
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Style for the overlay on the banner */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.358); /* Adjust the opacity as needed */
+}
+
+/* Style for the navbar */
+.navbarContainer {
+  position: absolute;
+  top: 0;
+  /* left: 10px; */
+  width: 98.69vw;
+  margin: auto;
+  z-index: 2; /* Ensure the navbar is on top of the image and overlay */
+}
+
+/* Add some padding to the navbar */
+.navbarContainer .container {
+  padding: 20px;
+}
+
+/* Style for the navbar links */
+.navbar-nav li {
+  display: inline-block;
+  margin-left: 15px;
+  padding: 8px 15px;
+}
+
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Style for the main section content */
+.banner-content {
+  text-align: center;
+}
+
+/* Additional styling for other sections as needed */
+
+  /* service section */
+  /* Styles for banner area */
+
+  .banner-content {
+    text-align: center;
+  }
+
+  
+  .banner-content h1 {
+    font-size: 48px; /* Adjust font size */
+    margin-bottom: 50px;
+  }
+  
+  .primary-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid #fff; /* Button border color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-btn:hover {
+    background-color: #cd1818; /* Button background color on hover */
+    color: #fff; /*Button text color on hover */
+  }
+  
+  /* Styles for portfolio area */
+  .portfolio-area {
+    padding: 80px 0; /* Adjust padding as needed */
+    background-color:black;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 620px) {
+        .portfolio-area{
+            width: 100%;
+        }
+        .container{
+          width: 100%;
+        }
+}
+  
+  .menu-content h1 {
+    font-size: 36px; /* Title font size */
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    margin-bottom: 40px;
+  }
+  
+  .filters ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .filters ul li {
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .filters ul li:hover {
+    color: #007bff; /* Hover color for filter items */
+  }
+  
+  .filters ul li.active {
+    color: #007bff; /* Active filter color */
+  }
+  
+  .filters-content {
+    position: relative;
+  }
+  
+  .single-portfolio {
+    margin-bottom: 30px;
+  }
+  
+  .single-portfolio img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .single-portfolio .item {
+    position: relative;
+  }
+  
+  .single-portfolio .p-inner {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Background color for caption */
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .single-portfolio .p-inner h4,
+  .single-portfolio .p-inner h5 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .single-portfolio .p-inner .cat {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .single-portfolio img {
+    width: 100%; /* Make the images responsive and take the full width of their container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+.navbutton{
+  border-top-left-radius: 0%;
+}
+/* Your existing CSS code */
+
+@media screen and (max-width: 767px) {
+  .navbar-brand h1 {
+    font-size: 24px;
+  }
+
+  .navbar-toggler-icon {
+    background-color: rgb(250, 247, 247);
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar-nav a {
+    color: black !important;
+  }
+}

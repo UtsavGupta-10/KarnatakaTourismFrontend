@@ -1,0 +1,17 @@
+.no-border{
+    border: none;
+}
+
+.containerx{
+    background-image: url('../../../assets/images/m1.png');
+    
+    background-size: cover;
+    background-position: center;
+    height: 53.125rem;
+    max-height:56.25rem;
+    overflow-x: hidden;
+    /* background-repeat: no-repeat; */
+  }
+  .subscript {
+    vertical-align: sub;
+  }

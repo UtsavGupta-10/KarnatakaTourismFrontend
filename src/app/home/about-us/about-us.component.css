@@ -1,0 +1,68 @@
+/* Navbar styles */
+/* Shift navbar content from right to left */
+.navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav {
+    direction: rtl;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 15px; /* Adjust the spacing between items */
+  }
+  
+  .navbar-nav .nav-link {
+    padding-right: 15px; /* Adjust the padding */
+    padding-left: 0; /* Reset left padding */
+  }
+  
+  /* Header styles */
+  header {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    font-size: 24px;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 60px 0;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  section ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer styles */
+  footer {
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 16px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,83 @@
+<div class="bg-transparent  addplace-container p-2 " >
+        <form  #placeForm="ngForm" class="bg-white border p-4 rounded-4 test"  style="opacity: 0.85;">
+            <div class="row " >
+                <div class="mb-3 col ">
+                    <label for="name" class="form-label">Add Name</label>
+                    <input #name="ngModel" type="text" class="form-control border-black " 
+                    id="name" name="name" 
+                    placeholder="eg:Delhi" [(ngModel)]="place.name" 
+                    required>
+
+                     <div *ngIf="name.invalid && (name.dirty || name.touched)" 
+                     class="text-danger ">
+                        <div *ngIf="name.hasError">Name is required.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3 col ">
+                    <label for="distance" class="form-label">Add Distance</label>
+                    <input type="number" class="form-control border-black " 
+                    id="distance" name="distance" #distance="ngModel"
+                    placeholder="eg:15 km" [(ngModel)]="place.distance" required>
+                    <div *ngIf="distance.invalid && (distance.dirty || distance.touched)" 
+                     class="text-danger ">
+                        <div *ngIf="distance.hasError">Distance is required.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col ">
+                    <label for="area" class="form-label">Add Area</label>
+                    <input #area="ngModel" type="text" class="form-control border-black " 
+                    id="area" name="area" 
+                    placeholder="eg:Near DB Mall Bhopal,Madhya Pradesh" [(ngModel)]="place.area" 
+                    required>
+
+                     <div *ngIf="area.invalid && (area.dirty || area.touched)" 
+                     class="text-danger ">
+                        <div *ngIf="area.hasError">Area is required.</div>
+                    </div>
+                </div>
+
+               <div class="mb-3 col"> 
+                <label for="tag" class="form-label">Add Tag</label>
+                <input #tag="ngModel" type="text" class="form-control border-black " 
+                id="tag" name="tag" 
+                placeholder="eg:Historical" [(ngModel)]="place.tag" 
+                required>
+
+                 <div *ngIf="tag.invalid && (tag.dirty || tag.touched)" 
+                 class="text-danger ">
+                    <div *ngIf="tag.hasError">Tag is required.</div>
+                </div>
+             </div>
+            
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Add Description</label>
+                <textarea placeholder="eg :Delhi has a beautiful Char Minar Gate" 
+                class="form-control" id="description" name="description" rows="2" 
+                [(ngModel)]="place.description" required 
+                #description="ngModel"></textarea>
+                <div *ngIf="description.invalid && (description.dirty || description.touched)" 
+                     class="text-danger ">
+                        <div *ngIf="description.hasError">Description is required.</div>
+                    </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="image" class="form-label">Add Image</label>
+                <input class="form-control w-50 "  type="file" id="image" name="image" 
+                ngModel  #image="ngModel" required (change)="onFileSelected($event)"> 
+
+                <div *ngIf="image.invalid && (image.dirty || image.touched)" 
+                     class="text-danger ">
+                        <div *ngIf="image.hasError">Image is required.</div>
+                    </div>
+             </div>
+
+             <button (click)="onSubmit()" class="btn btn-primary " [disabled]="placeForm.invalid">
+                 Add Place
+             </button>
+        </form>
+</div>
