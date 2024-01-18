@@ -1,3 +1,7 @@
+.exceeded-limit {
+  border-color: red; /* You can customize the style for exceeded limit */
+  color: red;
+}
 
 /* Form container styles */
  

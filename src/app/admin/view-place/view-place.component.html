@@ -1,20 +1,16 @@
-<div class="container mt-4">
-
-    <!-- Header Section (optional) -->
-    <div class="header">
-        <h1 style="color: white;">Destinations</h1>
-    </div>
-
-    <!-- Place List Section -->
-    <div class="place-list-container">
-        <ng-container *ngIf="placeList.length > 0; else noPlaces">
-            
-        </ng-container>
-        <ng-template #noPlaces>
-            <div class="no-places-message">
-                <h1>No tourist places available</h1>
-                <!-- You can add additional information or a call-to-action here -->
-            </div>
-        </ng-template>
+<div class="container ">
+ 
+    <!-- <div class=""><h1>Tourist Place</h1></div> -->
+ 
+    <div class="place-list-container ">
+        <div *ngFor="let place of placeList" class="">
+       
+            <app-view-place-card [place]="place" >
+           
+            </app-view-place-card>
+ 
+       
+        </div>
+    <h1 *ngIf="placeList.length === 0">Internal Server Error:501</h1>
     </div>
 </div>

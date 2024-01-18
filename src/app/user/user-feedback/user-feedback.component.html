@@ -28,8 +28,20 @@
         </select>
         <label for="dropdown" style="color: black;">Select Place</label>
       </div>
+     
+
       <textarea class='form-control' id='fb-comment' name='comment'
-      placeholder='Tell us what you think' [(ngModel)]="FeedbackData.comment"></textarea>
+  placeholder='Tell us what you think' [(ngModel)]="FeedbackData.comment"
+  (ngModelChange)="onCommentChange($event)"
+  [ngClass]="{'exceeded-limit': FeedbackData.comment.length > 120}"></textarea>
+<div class="text-muted">
+  {{ FeedbackData.comment.length }} / 120 characters
+</div>
+
+
+
+
+
 
       <div class="form-floating">
         <input [(ngModel)]="FeedbackData.rating" class='form-control'

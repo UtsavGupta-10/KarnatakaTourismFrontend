@@ -5,7 +5,7 @@
                     <label for="name" class="form-label">Add Name</label>
                     <input #name="ngModel" type="text" class="form-control border-black " 
                     id="name" name="name" 
-                    placeholder="eg:Delhi" [(ngModel)]="place.name" 
+                    placeholder="eg:Nandi Hills" [(ngModel)]="place.name" 
                     required>
 
                      <div *ngIf="name.invalid && (name.dirty || name.touched)" 
@@ -30,7 +30,7 @@
                     <label for="area" class="form-label">Add Area</label>
                     <input #area="ngModel" type="text" class="form-control border-black " 
                     id="area" name="area" 
-                    placeholder="eg:Near DB Mall Bhopal,Madhya Pradesh" [(ngModel)]="place.area" 
+                    placeholder="eg:Chikkaballapur, Kolar, Karnataka" [(ngModel)]="place.area" 
                     required>
 
                      <div *ngIf="area.invalid && (area.dirty || area.touched)" 
@@ -43,7 +43,7 @@
                 <label for="tag" class="form-label">Add Tag</label>
                 <input #tag="ngModel" type="text" class="form-control border-black " 
                 id="tag" name="tag" 
-                placeholder="eg:Historical" [(ngModel)]="place.tag" 
+                placeholder="eg:Hill Station" [(ngModel)]="place.tag" 
                 required>
 
                  <div *ngIf="tag.invalid && (tag.dirty || tag.touched)" 
@@ -55,7 +55,7 @@
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Add Description</label>
-                <textarea placeholder="eg :Delhi has a beautiful Char Minar Gate" 
+                <textarea placeholder="eg :Nandi hills is the most popular weekend destination for the city crowd of Bengaluru." 
                 class="form-control" id="description" name="description" rows="2" 
                 [(ngModel)]="place.description" required 
                 #description="ngModel"></textarea>

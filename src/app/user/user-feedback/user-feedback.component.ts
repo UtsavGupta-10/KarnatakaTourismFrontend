@@ -29,6 +29,14 @@ export class UserFeedbackComponent implements OnInit {
     });
   }
 
+  onCommentChange(value: string): void {
+    if (value.length > 120) {
+      this.FeedbackData.comment = value.substring(0, 120);
+    }
+  }
+
+  
+
   OnSubmit() {
     let placeIdArray = this.placeList.filter(data => data.name === this.selectedPlace);
     let placeData = placeIdArray[0];
@@ -54,3 +62,4 @@ export class UserFeedbackComponent implements OnInit {
     );
   }
 }
+
